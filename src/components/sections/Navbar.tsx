@@ -31,6 +31,9 @@ export function Navbar() {
               className="h-[calc(5rem-8px)] w-auto object-contain"
               priority
             />
+            <span className="text-sm md:text-base font-semibold tracking-wide text-gray-800">
+              FZB Immobilier
+            </span>
           </Link>
 
           {/* Desktop Navigation */}
