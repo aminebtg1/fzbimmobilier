@@ -31,7 +31,8 @@ export function Navbar() {
               className="h-[calc(5rem-8px)] w-auto object-contain"
               priority
             />
-            <span className="text-sm md:text-base font-semibold tracking-wide text-gray-800">
+            <span className="text-sm md:text-base font-semibold tracking-wide text-white-800"
+            style={{ fontFamily: "var(--font-playfair)" }}>
               FZB Immobilier
             </span>
           </Link>
