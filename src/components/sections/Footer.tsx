@@ -39,16 +39,12 @@ export function Footer() {
             <div className="space-y-2 text-gray-300">
               <div className="flex items-center">
                 <Phone className="w-4 h-4 mr-2" />
-                <span>01 23 45 67 89</span>
+                <span>438 345-9156</span>
               </div>
               <div className="flex items-center">
                 <Mail className="w-4 h-4 mr-2" />
-                <span>contact@agence-immobilier.fr</span>
-              </div>
-              <div className="flex items-start">
-                <MapPin className="w-4 h-4 mr-2 mt-1" />
-                <span>123 Avenue des Propriétés<br />75001 Paris</span>
-              </div>
+                <span>fatiz.btg.immo@gmail.com</span>
+              </div> 
             </div>
           </div>
         </div>

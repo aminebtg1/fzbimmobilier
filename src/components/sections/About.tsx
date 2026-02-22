@@ -5,16 +5,16 @@ import { motion } from "framer-motion"
 import Image from "next/image"
 
 const PARAGRAPH_1 =
-  "Choisir de travailler avec un courtier immobilier présente de nombreux avantages. Tout d'abord, un courtier immobilier professionnel possède une connaissance approfondie du marché immobilier local. Grâce à leur expertise, ils peuvent vous guider efficacement tout au long du processus d'achat ou de vente d'une propriété. Le courtier est capable d'évaluer correctement la valeur d'un bien, en tenant compte des tendances du marché et des comparables récents, assurant ainsi que vous obtenez le meilleur prix, que vous soyez acheteur ou vendeur."
+  "Votre alliée stratégique pour réussir votre projet immobilier. Je suis ravie de vous accueillir. En tant que courtière immobilière résidentielle, je mets à votre service une combinaison unique dpertise."
 
 const PARAGRAPH_2 =
-  "En plus de leur expertise en évaluation, les courtiers ont accès à un vaste réseau de professionnels de l'immobilier, des avocats et des inspecteurs. Cela leur permet de faciliter toutes les étapes de la transaction immobilière, de la négociation initiale jusqu'à la clôture finale. Leur capacité à gérer les aspects juridiques et administratifs complexes de l'achat ou de la vente d'une propriété offre une tranquillité d'esprit précieuse aux clients."
+  "Titulaire d'une maîtrise en finance, j'apporte une compréhension approfondie des marchés, de l'analyse financière et de la valeur réelle des propriétés. Formée en intelligence d'affaires et analytique, j'utilise les données, les tendances et les outils analytiques pour offrir à mes clients une vision stratégique et éclairée du marché immobilier."
 
 const PARAGRAPH_3 =
-  "Travailler avec un courtier immobilier signifie également bénéficier d'un accompagnement personnalisé et attentif. Le courtier s'engage à comprendre vos besoins spécifiques et à vous proposer des options qui correspondent à vos critères et à votre budget. Leur objectif est de rendre le processus aussi fluide et efficace que possible, en vous offrant des conseils honnêtes et des recommandations basées sur leur expérience et leur expertise."
+  "Cette double compétence me permet d'analyser chaque transaction avec précision, d'évaluer la valeur réelle d'un bien, d'anticiper les tendances du marché et de vous accompagner avec une vision stratégique, que vous souhaitiez acheter, vendre ou investir."
 
 const PARAGRAPH_4 =
-  "En résumé, choisir de faire appel à un courtier immobilier professionnel est une décision judicieuse pour toute personne impliquée dans une transaction immobilière. Leur connaissance approfondie du marché, leur réseau étendu de professionnels et leur engagement envers le service client font d'eux des partenaires inestimables pour atteindre vos objectifs immobiliers avec succès."
+  "Mon objectif est simple, vous offrir une expérience immobilière transparente, efficace et adaptée à vos besoins, tout en maximisant votre tranquillité d'esprit et votre retour sur investissement. Explorez, découvez, et n'hésitez pas à me contacter pour discuter de votre projet. Ensemble, nous transformerons vos ambitions immobilières en réussite concrète."
 
 export function About() {
   const [isExpanded, setIsExpanded] = useState(false)

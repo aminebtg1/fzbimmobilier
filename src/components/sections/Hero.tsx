@@ -4,7 +4,7 @@ import { useState, useEffect } from "react"
 import { motion, AnimatePresence } from "framer-motion"
 import { Facebook, Instagram, Phone } from "lucide-react"
 
-const BACKGROUNDS = ["/bg1.jpg", "/bg2.jpg", "/bg3.jpg", "/bg4.jpg"]
+const BACKGROUNDS = ["/bg1.jpg", "/bg2.jpg", "/bg3.jpg", "/bg4.jpg", "/bg5.jpg"]
 
 export function Hero() {
   const [currentBg, setCurrentBg] = useState(0)

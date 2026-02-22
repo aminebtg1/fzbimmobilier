@@ -4,14 +4,14 @@ import { useState } from "react"
 import Link from "next/link"
 import Image from "next/image"
 import { Button } from "@/components/ui/button"
-import { Menu, X, Home, Building, Phone, User } from "lucide-react"
+import { Menu, X, Home, Building, Phone, User, Mail } from "lucide-react"
 
 export function Navbar() {
   const [isOpen, setIsOpen] = useState(false)
 
   const navItems = [
     { href: "/", label: "Accueil", icon: Home },
-    { href: "/proprietes", label: "Propriétés", icon: Building },
+   // { href: "/proprietes", label: "Propriétés", icon: Building },
     { href: "/acheter", label: "Acheter" },
     { href: "/vendre", label: "Vendre" },
     { href: "/contact", label: "Contact", icon: Phone },
@@ -39,25 +39,28 @@ export function Navbar() {
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
-            {navItems.map((item) => (
-              <Link
-                key={item.href}
-                href={item.href}
-                className="text-white hover:text-white/80 transition-colors duration-200 font-medium text-sm uppercase tracking-wide"
-              >
-                {item.label}
-              </Link>
-            ))}
-          </div>
+              {navItems.map((item) => (
+                <Link
+                  key={item.href}
+                  href={item.href}
+                  className="text-white hover:text-white/80 transition-colors duration-200 font-medium text-sm uppercase tracking-wide"
+                  style={{ fontFamily: "var(--font-playfair)" }}
+                >
+                  {item.label}
+                </Link>
+              ))}
+            </div>
 
-          {/* Desktop CTA */}
-          <div className="hidden md:flex items-center space-x-4">
-            <Link href="/admin">
-              <Button variant="outline" size="sm" className="border-white text-white hover:bg-white hover:text-black">
-                <User className="w-4 h-4 mr-2" />
-                Admin
-              </Button>
-            </Link>
+          {/* Desktop CTA - Phone & Email */}
+          <div className="hidden md:flex items-center space-x-4" style={{ fontFamily: "var(--font-playfair)" }}>
+            <a href="tel:4383459156" className="flex items-center text-white hover:text-white/80 transition-colors">
+              <Phone className="w-4 h-4 mr-2" />
+              <span>438 345-9156</span>
+            </a>
+            <a href="mailto:fatiz.btg.immo@gmail.com" className="flex items-center text-white hover:text-white/80 transition-colors">
+              <Mail className="w-4 h-4 mr-2" />
+              <span>fatiz.btg.immo@gmail.com</span>
+            </a>
           </div>
 
           {/* Mobile menu button */}
@@ -83,13 +86,15 @@ export function Navbar() {
                   {item.label}
                 </Link>
               ))}
-              <div className="pt-4 border-t border-white/20">
-                <Link href="/admin" onClick={() => setIsOpen(false)}>
-                  <Button variant="outline" className="w-full border-white text-white hover:bg-white hover:text-black">
-                    <User className="w-4 h-4 mr-2" />
-                    Admin
-                  </Button>
-                </Link>
+              <div className="pt-4 border-t border-white/20 space-y-3">
+                <a href="tel:4383459156" className="flex items-center text-white hover:text-white/80 transition-colors px-2 py-1" style={{ fontFamily: "var(--font-playfair)" }}>
+                  <Phone className="w-4 h-4 mr-2" />
+                  <span>438 345-9156</span>
+                </a>
+                <a href="mailto:fatiz.btg.immo@gmail.com" className="flex items-center text-white hover:text-white/80 transition-colors px-2 py-1" style={{ fontFamily: "var(--font-playfair)" }}>
+                  <Mail className="w-4 h-4 mr-2" />
+                  <span>fatiz.btg.immo@gmail.com</span>
+                </a>
               </div>
             </div>
           </div>

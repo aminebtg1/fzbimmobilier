@@ -64,27 +64,96 @@ export default function SellPage() {
   }
 
   return (
-    <div className="min-h-screen bg-gray-50 py-12">
+    <div className="min-h-screen bg-gradient-to-b from-white to-neutral-100 py-12">
       <div className="container mx-auto px-4">
-        <div className="max-w-2xl mx-auto">
+        <div className="max-w-3xl mx-auto">
+          {/* Introduction Section */}
+          <div className="relative overflow-hidden rounded-2xl border border-white/10 bg-gradient-to-b from-neutral-950 via-neutral-950 to-neutral-900 p-8 md:p-12 mb-10 text-white shadow-[0_20px_60px_-30px_rgba(0,0,0,0.8)]">
+  {/* Subtle grid + glow */}
+  <div className="pointer-events-none absolute inset-0 opacity-[0.08] [background-image:linear-gradient(to_right,rgba(255,255,255,.25)_1px,transparent_1px),linear-gradient(to_bottom,rgba(255,255,255,.25)_1px,transparent_1px)] [background-size:48px_48px]" />
+  <div className="pointer-events-none absolute -top-24 -right-24 h-80 w-80 rounded-full bg-white/10 blur-3xl" />
+  <div className="pointer-events-none absolute -bottom-24 -left-24 h-80 w-80 rounded-full bg-white/5 blur-3xl" />
+
+  <div className="relative z-10 mx-auto max-w-4xl">
+
+    <h1 className="text-center text-3xl md:text-5xl font-semibold tracking-tight" style={{ fontFamily: "var(--font-playfair)" }}>
+      Vendez avec confiance
+    </h1>
+
+    <p className="mx-auto mt-5 max-w-2xl text-center text-base md:text-lg leading-relaxed text-white/75" style={{ fontFamily: "var(--font-playfair)" }}>
+      Une stratégie de mise en marché qui optimise la valeur de votre propriété
+    </p>
+
+    {/* Content */}
+    <div className="mt-10 space-y-5 text-white/80 leading-relaxed" style={{ fontFamily: "var(--font-playfair)" }}>
+      <p>
+        Vendre une propriété est une décision importante. Pour obtenir le meilleur prix, au meilleur moment, vous méritez un accompagnement professionnel, stratégique et entièrement dédié à vos intérêts.
+      </p>
+
+      <p>
+        En tant que courtière immobilière résidentielle, je combine une approche humaine avec une expertise pointue. J’analyse votre propriété sous tous ses angles : valeur réelle, positionnement sur le marché, tendances actuelles, comportements des acheteurs et potentiel d’appréciation. Chaque décision est guidée par des données, des stratégies éprouvées et une compréhension fine du marché.
+      </p>
+
+      {/* Value section */}
+      <div className="mt-8 rounded-xl border border-white/10 bg-white/[0.03] p-6 md:p-7">
+        <p className="text-sm font-medium uppercase tracking-wider text-white/60">
+          Ce que je vous offre
+        </p>
+
+        <ul className="mt-4 grid gap-3 md:grid-cols-2">
+          {[
+            "Une évaluation précise et réaliste de votre propriété",
+            "Une stratégie de mise en marché personnalisée et performante",
+            "Une visibilité maximale grâce à des outils marketing modernes",
+            "Une gestion complète des visites, des suivis et des négociations",
+            "Une approche transparente, proactive et orientée résultats",
+          ].map((item) => (
+            <li key={item} className="flex items-start gap-3">
+              <span className="mt-1 inline-flex h-6 w-6 shrink-0 items-center justify-center rounded-full border border-white/10 bg-white/5 text-white/70">
+                ✓
+              </span>
+              <span className="text-white/80">{item}</span>
+            </li>
+          ))}
+        </ul>
+      </div>
+
+      <p className="pt-2 text-white/85 font-medium">
+        Mon objectif est simple : 
+vous aider à vendre rapidement, au meilleur prix, tout en vous offrant une expérience fluide et sans stress.
+      </p>
+
+      {/* CTA line */}
+      <div className="mt-8 flex flex-col items-center gap-3 rounded-xl border border-white/10 bg-white/[0.03] p-6 text-center">
+        <p className="text-lg md:text-xl font-semibold text-white">
+          Votre propriété mérite une stratégie à la hauteur de sa valeur
+        </p>
+        <p className="text-sm text-white/60">
+          Ensemble, faisons de votre vente un succès.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
           <div className="text-center mb-8">
-            <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              Vendre votre propriété
-            </h1>
-            <p className="text-lg text-gray-600">
-              Confiez-nous la vente de votre bien immobilier. Notre équipe d'experts vous accompagne à chaque étape.
+            <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4" style={{ fontFamily: "var(--font-playfair)" }}>
+              Parlons de votre projet
+            </h2>
+            <p className="text-lg text-gray-600" style={{ fontFamily: "var(--font-playfair)" }}>
+              Remplissez ce formulaire et je vous contacterai rapidement pour vous accompagner dans votre projet d'achat.
             </p>
           </div>
 
           <Card>
             <CardHeader>
-              <CardTitle>Informations sur votre bien</CardTitle>
+              <CardTitle>Vos informations</CardTitle>
             </CardHeader>
             <CardContent>
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div className="grid md:grid-cols-2 gap-4">
                   <div>
-                    <label className="block text-sm font-medium mb-1">Prénom *</label>
+                    <label className="block text-sm font-medium mb-1"style={{ fontFamily: "var(--font-playfair)" }}>Prénom *</label>
                     <Input
                       type="text"
                       name="firstName"
@@ -94,7 +163,7 @@ export default function SellPage() {
                     />
                   </div>
                   <div>
-                    <label className="block text-sm font-medium mb-1">Nom *</label>
+                    <label className="block text-sm font-medium mb-1"style={{ fontFamily: "var(--font-playfair)" }}>Nom *</label>
                     <Input
                       type="text"
                       name="lastName"
@@ -106,7 +175,7 @@ export default function SellPage() {
                 </div>
 
                 <div>
-                  <label className="block text-sm font-medium mb-1">Email *</label>
+                  <label className="block text-sm font-medium mb-1"style={{ fontFamily: "var(--font-playfair)" }}>Email *</label>
                   <Input
                     type="email"
                     name="email"
@@ -117,7 +186,7 @@ export default function SellPage() {
                 </div>
 
                 <div>
-                  <label className="block text-sm font-medium mb-1">Téléphone *</label>
+                  <label className="block text-sm font-medium mb-1"style={{ fontFamily: "var(--font-playfair)" }}>Téléphone *</label>
                   <Input
                     type="tel"
                     name="phone"
@@ -128,7 +197,7 @@ export default function SellPage() {
                 </div>
 
                 <div>
-                  <label className="block text-sm font-medium mb-1">Adresse du bien *</label>
+                  <label className="block text-sm font-medium mb-1"style={{ fontFamily: "var(--font-playfair)" }}>Adresse *</label>
                   <Input
                     type="text"
                     name="address"
@@ -139,29 +208,29 @@ export default function SellPage() {
                 </div>
 
                 <div>
-                  <label className="block text-sm font-medium mb-1">Ville *</label>
+                  <label className="block text-sm font-medium mb-1"style={{ fontFamily: "var(--font-playfair)" }}>Ville souhaitée</label>
                   <Input
                     type="text"
                     name="city"
                     value={formData.city}
                     onChange={handleChange}
-                    required
+                    placeholder="Ex: Laval, Gatineau, Sherbrooke..."
                   />
                 </div>
 
                 <div>
-                  <label className="block text-sm font-medium mb-1">Message</label>
+                  <label className="block text-sm font-medium mb-1"style={{ fontFamily: "var(--font-playfair)" }}>Message</label>
                   <Textarea
                     name="message"
                     value={formData.message}
                     onChange={handleChange}
-                    placeholder="Décrivez votre bien, sa surface, nombre de pièces, état général..."
+                    placeholder="Décrivez votre projet, vos besoins spécifiques..."
                     rows={4}
                   />
                 </div>
 
-                <Button type="submit" className="w-full">
-                  Demander une estimation
+                <Button type="submit" className="w-full bg-neutral-900 hover:bg-neutral-800 text-white font-semibold py-6 text-lg"style={{ fontFamily: "var(--font-playfair)" }}>
+                  Envoyer le formulaire
                 </Button>
               </form>
             </CardContent>
