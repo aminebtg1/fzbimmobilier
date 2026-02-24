@@ -68,13 +68,20 @@ export function About() {
 
           {/* Portrait - à droite du paragraphe */}
           <motion.div
-            initial={{ opacity: 0, x: 20 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.8, delay: 0.2 }}
-            className="relative aspect-[3/4] min-h-[400px] md:min-h-0 w-full md:w-[38%] md:shrink-0"
-          >
+  initial={{ opacity: 0, x: 20, scale: 0.95 }}
+  whileInView={{ opacity: 1, x: 0, scale: 1 }}
+  transition={{ duration: 0.8, delay: 0.2 }}
+  className="relative aspect-[3/3] min-h-[200px] md:min-h-0 w-full md:w-[38%] md:shrink-0
+             rounded-2xl
+             bg-white/10 backdrop-blur-md
+             border border-white/20
+             shadow-xl shadow-black/20
+             hover:shadow-2xl hover:shadow-indigo-500/20
+             hover:scale-[1.02]
+             transition-all duration-500"
+>
             <Image
-              src="/fatimazahra.png"
+              src="/fatimzahra.png"
               alt="Fatima Zahra Boutaggount"
               fill
               className="object-cover object-top"
