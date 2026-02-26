@@ -162,29 +162,6 @@ export function Contact() {
                 />
               </div>
 
-              <div className="flex items-start gap-2.5 pt-1">
-                <input
-                  id="consent"
-                  type="checkbox"
-                  checked={form.consent}
-                  onChange={handleConsentChange}
-                  className="mt-0.5 h-3 w-3 accent-white shrink-0"
-                />
-                <label htmlFor="consent" className="text-[9px] md:text-[10px] leading-relaxed text-white/80 font-sans">
-                  J&apos;accepte d&apos;être contacté par Fatima Zahra Boutaggount par appel, e-mail
-                  et SMS. Pour vous désinscrire, vous pouvez répondre &quot;stop&quot; à tout moment
-                  ou cliquer sur le lien de désinscription dans les emails. Des frais de message et
-                  de données peuvent s&apos;appliquer.{" "}
-                  <span className="text-[#7fd580] cursor-pointer hover:underline">
-                    Politique de confidentialité
-                  </span>{" "}
-                  et{" "}
-                  <span className="text-[#7fd580] cursor-pointer hover:underline">
-                    Condition de l&apos;agence
-                  </span>
-                </label>
-              </div>
-
               <div className="space-y-2 pt-3">
                 <Button
                   type="submit"

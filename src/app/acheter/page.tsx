@@ -169,6 +169,7 @@ export default function BuyPage() {
                       value={formData.firstName}
                       onChange={handleChange}
                       required
+                      className='bg-white'
                     />
                   </div>
                   <div>
@@ -179,6 +180,7 @@ export default function BuyPage() {
                       value={formData.lastName}
                       onChange={handleChange}
                       required
+                      className='bg-white'
                     />
                   </div>
                 </div>
@@ -191,6 +193,7 @@ export default function BuyPage() {
                     value={formData.email}
                     onChange={handleChange}
                     required
+                    className='bg-white'
                   />
                 </div>
 
@@ -202,6 +205,7 @@ export default function BuyPage() {
                     value={formData.phone}
                     onChange={handleChange}
                     required
+                    className='bg-white'
                   />
                 </div>
 
@@ -213,6 +217,7 @@ export default function BuyPage() {
                       name="budgetMin"
                       value={formData.budgetMin}
                       onChange={handleChange}
+                      className='bg-white'
                     />
                   </div>
                   <div>
@@ -222,6 +227,7 @@ export default function BuyPage() {
                       name="budgetMax"
                       value={formData.budgetMax}
                       onChange={handleChange}
+                      className='bg-white'
                     />
                   </div>
                 </div>
@@ -234,6 +240,7 @@ export default function BuyPage() {
                     value={formData.city}
                     onChange={handleChange}
                     placeholder="Ex: Laval, Gatineau, Sherbrooke..."
+                    className='bg-white'
                   />
                 </div>
 
@@ -245,6 +252,7 @@ export default function BuyPage() {
                     onChange={handleChange}
                     placeholder="Décrivez votre projet, vos besoins spécifiques..."
                     rows={4}
+                    className='bg-white'
                   />
                 </div>
 

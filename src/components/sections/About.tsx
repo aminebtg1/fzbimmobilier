@@ -5,7 +5,7 @@ import { motion } from "framer-motion"
 import Image from "next/image"
 
 const PARAGRAPH_1 =
-  "Votre alliée stratégique pour réussir votre projet immobilier. Je suis ravie de vous accueillir. En tant que courtière immobilière résidentielle, je mets à votre service une combinaison unique dpertise."
+  "Votre alliée stratégique pour réussir votre projet immobilier. Je suis ravie de vous accueillir. En tant que courtière immobilière résidentielle, je mets à votre service une combinaison unique expertise."
 
 const PARAGRAPH_2 =
   "Titulaire d'une maîtrise en finance, j'apporte une compréhension approfondie des marchés, de l'analyse financière et de la valeur réelle des propriétés. Formée en intelligence d'affaires et analytique, j'utilise les données, les tendances et les outils analytiques pour offrir à mes clients une vision stratégique et éclairée du marché immobilier."
@@ -81,7 +81,7 @@ export function About() {
              transition-all duration-500"
 >
             <Image
-              src="/fatimzahra.png"
+              src="/fzbtg.png"
               alt="Fatima Zahra Boutaggount"
               fill
               className="object-cover object-top"

@@ -27,7 +27,6 @@ export async function POST(request: Request) {
       <p><strong>Nom :</strong> ${name}</p>
       <p><strong>Téléphone :</strong> ${phone || "Non renseigné"}</p>
       <p><strong>Courriel :</strong> ${email}</p>
-      <p><strong>Consentement :</strong> ${consent ? "Oui" : "Non"}</p>
       <p><strong>Message :</strong></p>
       <p>${message.replace(/\n/g, "<br />")}</p>
     `
@@ -39,7 +38,6 @@ export async function POST(request: Request) {
       text: `Nom: ${name}
 Téléphone: ${phone || "Non renseigné"}
 Courriel: ${email}
-Consentement: ${consent ? "Oui" : "Non"}
 
 Message:
 ${message}`,

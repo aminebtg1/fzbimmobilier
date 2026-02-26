@@ -160,6 +160,8 @@ vous aider Ã  vendre rapidement, au meilleur prix, tout en vous offrant une expÃ
                       value={formData.firstName}
                       onChange={handleChange}
                       required
+                      className='bg-white'
+                      
                     />
                   </div>
                   <div>
@@ -170,6 +172,7 @@ vous aider Ã  vendre rapidement, au meilleur prix, tout en vous offrant une expÃ
                       value={formData.lastName}
                       onChange={handleChange}
                       required
+                      className='bg-white'
                     />
                   </div>
                 </div>
@@ -182,6 +185,7 @@ vous aider Ã  vendre rapidement, au meilleur prix, tout en vous offrant une expÃ
                     value={formData.email}
                     onChange={handleChange}
                     required
+                    className='bg-white'
                   />
                 </div>
 
@@ -193,6 +197,7 @@ vous aider Ã  vendre rapidement, au meilleur prix, tout en vous offrant une expÃ
                     value={formData.phone}
                     onChange={handleChange}
                     required
+                    className='bg-white'
                   />
                 </div>
 
@@ -204,6 +209,7 @@ vous aider Ã  vendre rapidement, au meilleur prix, tout en vous offrant une expÃ
                     value={formData.address}
                     onChange={handleChange}
                     required
+                    className='bg-white'
                   />
                 </div>
 
@@ -215,6 +221,7 @@ vous aider Ã  vendre rapidement, au meilleur prix, tout en vous offrant une expÃ
                     value={formData.city}
                     onChange={handleChange}
                     placeholder="Ex: Laval, Gatineau, Sherbrooke..."
+                    className='bg-white'
                   />
                 </div>
 
@@ -226,6 +233,7 @@ vous aider Ã  vendre rapidement, au meilleur prix, tout en vous offrant une expÃ
                     onChange={handleChange}
                     placeholder="DÃ©crivez votre projet, vos besoins spÃ©cifiques..."
                     rows={4}
+                    className='bg-white'
                   />
                 </div>
 
