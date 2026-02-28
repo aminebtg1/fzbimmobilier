@@ -54,7 +54,7 @@ export function Hero() {
             className="text-xl md:text-2xl lg:text-3xl text-white/95"
             style={{ fontFamily: "var(--font-playfair)" }}
           >
-            Courtier Immobilier
+            Courtier Immobilier Résidentiel
           </p>
         </motion.div>
       </div>
