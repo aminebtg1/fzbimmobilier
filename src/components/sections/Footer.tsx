@@ -39,7 +39,7 @@ Explorez nos offres et contactez-nous pour donner vie à vos ambitions.         
               </div>
               <div className="flex items-center">
                 <Mail className="w-4 h-4 mr-2" />
-                <span>fatiz.btg.immo@gmail.com</span>
+                <span>fatima@fzbimmobilier.ca</span>
               </div> 
             </div>
           </div>
