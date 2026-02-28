@@ -19,8 +19,8 @@ Explorez nos offres et contactez-nous pour donner vie à vos ambitions.         
           <div>
             <h4 className="text-lg font-semibold mb-4">Services</h4>
             <ul className="space-y-2 text-gray-300">
-              <li><a href="#" className="hover:text-white">Achat immobilier</a></li>
-              <li><a href="#" className="hover:text-white">Vente immobilière</a></li>
+              <li><a href="/acheter" className="hover:text-white">Achat immobilier</a></li>
+              <li><a href="vendre" className="hover:text-white">Vente immobilière</a></li>
             </ul>
           </div>
           <div>

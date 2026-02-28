@@ -59,7 +59,7 @@ export function Navbar() {
             </a>
             <a href="mailto:fatiz.btg.immo@gmail.com" className="flex items-center text-white hover:text-white/80 transition-colors">
               <Mail className="w-4 h-4 mr-2" />
-              <span>fatiz.btg.immo@gmail.com</span>
+              <span>fatima@fzbimmobilier.ca</span>
             </a>
           </div>
 
